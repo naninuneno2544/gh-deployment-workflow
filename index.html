@@ -12,29 +12,33 @@
             background-color: #f4f4f4;
         }
         .container {
-            width: 100%;
+            width: 90%;
+            max-width: 800px;
             margin: 20px auto;
             background: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .profile-pic {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
+        .head-flex {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
+        .profile-pic {
+            width: 100px;
+            height: 120px;            
+            object-fit: cover;
+            margin-bottom: 10px;
+        }        
         h1, h2 {
             color: #333;
         }
         .section {
             margin-bottom: 20px;
         }
-        .contact-info, .skills, .work-experience, .education, .hobbies {
+        .contact-info, .objective, .skills, .work-experience, .education, .hobbies {
             padding: 10px;
             border-left: 4px solid #007bff;
             background: #f9f9f9;
@@ -58,10 +62,14 @@
 </head>
 <body>
     <div class="container">
-        <img src="images/resume.png" alt="Girl in a jacket" alt="Profile Picture" class="profile-pic">
-        <h1>Tanawat Suttipunt</h1>
-        <h3>Software Engineer</h3>        
-                
+        <div class="head-flex">
+            <div>
+                <h1>Tanawat Suttipunt</h1>
+                <h3>Software Engineer</h3>
+            </div>            
+            <img src="images/resume.png" alt="Girl in a jacket" alt="Profile Picture" class="profile-pic">
+        </div>
+
         <div class="section contact-info">
             <h2>Contact</h2>
             <p>Phone: 095-431-0324</p>
@@ -92,23 +100,23 @@
             <ul>
                 <li><strong>ASP.NET Developer</strong> - PSU DIIS (May 2024 - Present)
                     <ul>
-                        <li>Developed a grade submission project using .NET MVC infrastructure.</li>
-                        <li>Implemented frontend using Blazor with Ant Design UI library.</li>
-                        <li>Set up PostgreSQL database and integrated Azure DevOps CI/CD pipeline.</li>
+                        <li>&#9679; Developed a grade submission project using .NET MVC infrastructure.</li>
+                        <li>&#9679; Implemented frontend using Blazor with Ant Design UI library.</li>
+                        <li>&#9679; Set up PostgreSQL database and integrated Azure DevOps CI/CD pipeline.</li>
                     </ul>
                 </li>
                 <li><strong>Software Engineering Intern</strong> - Bonmek Co. (Oct 2023 - Mar 2024)
                     <ul>
-                        <li>Migrated a web application from GraphQL API to REST API.</li>
-                        <li>Developed a new timetable module and provided training.</li>
-                        <li>Worked with Angular frontend and Groovy on Grails backend using MySQL.</li>
+                        <li>&#9679; Migrated a web application from GraphQL API to REST API.</li>
+                        <li>&#9679; Developed a new timetable module and provided training.</li>
+                        <li>&#9679; Worked with Angular frontend and Groovy on Grails backend using MySQL.</li>
                     </ul>
                 </li>
                 <li><strong>Software Engineering</strong> - Out Source Project (Apr 2022 - Mar 2024)
                     <ul>
-                        <li>Developed frontend web applications using React, Next.js, and Angular.</li>
-                        <li>Implemented responsive user interfaces for mobile and web platforms.</li>
-                        <li>Developed backend service applications using Django.</li>
+                        <li>&#9679; Developed frontend web applications using React, Next.js, and Angular.</li>
+                        <li>&#9679; Implemented responsive user interfaces for mobile and web platforms.</li>
+                        <li>&#9679; Developed backend service applications using Django.</li>
                     </ul>
                 </li>
             </ul>
